@@ -79,7 +79,6 @@ Md Jafar Ali Shaikh
 
 📱 WhatsApp: +8801716506412
 🔗 LinkedIn: https://www.linkedin.com/in/jafar-sheikh/
-
 📘 Facebook: https://www.facebook.com/Jafor.sheikh12
 
 ```bash
