@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #020617;
+  --bg-secondary: #020b1a;
+  --blue: #2563eb;
+  --cyan: #38bdf8;
+  --gold: #ffc107;
+  --white: #ffffff;
+  --muted: #94a3b8;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: auto;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--gold);
+  color: #020617;
+}
+
+.container-custom {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff, #38bdf8, #ffc107);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.blue-glow {
+  box-shadow: 0 0 60px rgba(37, 99, 235, 0.35);
+}
+
+.gold-glow {
+  box-shadow: 0 0 60px rgba(255, 193, 7, 0.25);
+}
+
+.agency-bg {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.22), transparent 34%),
+    radial-gradient(circle at 85% 10%, rgba(56, 189, 248, 0.15), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(255, 193, 7, 0.09), transparent 30%),
+    #020617;
+}
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-header {
+  max-width: 760px;
+  margin: 0 auto 64px auto;
+  text-align: center;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 193, 7, 0.28);
+  background: rgba(255, 193, 7, 0.1);
+  color: #facc15;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.section-title {
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.section-desc {
+  margin-top: 20px;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.section-grid-gap {
+  margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section-header {
+    margin-bottom: 42px;
+  }
 }
