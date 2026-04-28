@@ -12,6 +12,7 @@ import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import AboutWhy from "./components/AboutWhy";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <TrustedBy />
         <ProblemSection />
+        <AboutWhy />
         <Services />
         <Process />
         <WhyChoose />
