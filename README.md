@@ -78,7 +78,8 @@ Md Jafar Ali Shaikh
 📧 Email: jaforsheikh258@gmail.com
 
 📱 WhatsApp: +8801716506412
-🔗 LinkedIn: https://www.linkedin.com/in/jafar-sheikh/
+🔗 LinkedIn: https://www.linkedin.com/in/jafar-sheikh/ 
+
 📘 Facebook: https://www.facebook.com/Jafor.sheikh12
 
 ```bash
